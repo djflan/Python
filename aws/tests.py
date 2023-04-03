@@ -11,7 +11,7 @@ def load_sample_event_from_file( test_event_file_name: str) -> dict:
         #validate(event=event, schema=INPUT_SCHEMA)
         return event
 
-test_event = load_sample_event_from_file("sample")
+test_event = load_sample_event_from_file("ApiReqV2")
 
 for kvp in test_event:
     print(kvp)

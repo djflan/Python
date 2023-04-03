@@ -1,3 +1,5 @@
+# https://jimmydqv.com/secure-api-gw-with-lambda-auth/
+
 import hashlib
 import hmac
 import base64
