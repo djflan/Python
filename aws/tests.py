@@ -1,4 +1,5 @@
 import json
+from awslambda import *
 
 def load_sample_event_from_file( test_event_file_name: str) -> dict:
     """
@@ -13,4 +14,7 @@ def load_sample_event_from_file( test_event_file_name: str) -> dict:
 test_event = load_sample_event_from_file("sample")
 
 for kvp in test_event:
+    print(kvp)
     print(test_event[kvp])
+
+test_return_value = lambda_handler(event=test_event, context=None)
